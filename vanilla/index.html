@@ -56,6 +56,91 @@
   </div>
 </header>
 
+    <section class="video-hero" aria-labelledby="hero-title">
+  <video
+    class="video-hero__media"
+    autoplay
+    muted
+    loop
+    playsinline
+    poster="img/poster-natacion.jpg"
+    aria-hidden="true"
+  >
+    <source src="src/assets/videos/natacion.webm" type="video/webm" />
+    <source src="src/assets/videos/natacion.mp4" type="video/mp4" />
+    Tu navegador no puede reproducir este video.
+  </video>
+
+  <div class="video-hero__overlay"></div>
+
+  <div class="contenedor video-hero__content">
+    <p class="video-hero__eyebrow">Colección acuática 2026</p>
+
+    <h1 id="hero-title">
+      Muévete con libertad.
+      <span>Entrena con propósito.</span>
+    </h1>
+
+    <p class="video-hero__description">
+      En el agua no solo fortaleces tu cuerpo, también encuentras la calma
+      que tu mente necesita.
+    </p>
+
+    <p class="video-hero__tagline">
+      — Sumérgete en tu bienestar.
+    </p>
+
+    <div class="video-hero__actions">
+      <a class="button button--primary" href="#productos">
+        Comprar ahora
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="video-hero__scroll" aria-hidden="true">
+    <span></span>
+    Descubre Hydra
+  </div>
+</section>
+<section class="featured-products" id="productos">
+  <div class="contenedor">
+    <p class="section-label">Diseñado para tu próxima brazada</p>
+    <h2>Productos que acompañan tu ritmo</h2>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="contenedor footer__content">
+    <div class="footer__brand">
+      <a href="index.html" class="header-logo">
+        <img src="./src/assets/hidralogo.svg" alt="HYDRA">
+      </a>
+      <!-- <a class="footer__logo" href="index.html">Hydra</a> -->
+      <p>
+        Muévete con libertad y encuentra tu bienestar en cada brazada.
+      </p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Navegación del pie de página">
+      <a href="index.html">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#">Nosotros</a>
+    </nav>
+
+    <div class="footer__contact">
+      <p class="footer__label">¿Tienes alguna pregunta?</p>
+      <a href="mailto:hola@hydra.com">hola@hydra.com</a>
+    </div>
+  </div>
+
+  <div class="contenedor footer__bottom">
+    <p>© 2026 Hydra. Todos los derechos reservados.</p>
+    <p>Diseñado para disfrutar el agua.</p>
+  </div>
+</footer>
+
+
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
