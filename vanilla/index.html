@@ -21,6 +21,10 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./src/style.css">
+
+  <!-- Estilos del catálogo -->
+  <link rel="stylesheet" href="./src/catalogo.css">
+  
 </head>
 
 <body>
@@ -40,8 +44,8 @@
           <ul class="nav">
             <li><a href="#" class="nav-link">Hombre</a></li>
             <li><a href="#" class="nav-link">Mujer</a></li>
-            <li><a href="#" class="nav-link">Equipamiento</a></li>
-            <li><a href="#" class="nav-link">Accesorios</a></li>
+            <li><a href="#categorias" class="nav-link">Equipo</a></li>
+            <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
           </ul>
         </nav>
 
@@ -99,7 +103,7 @@
       </p>
 
       <div class="video-hero__actions">
-        <a class="button button--primary" href="#productos">
+        <a class="button button--primary" href="#catalogo">
           Comprar ahora
           <span aria-hidden="true">→</span>
         </a>
@@ -189,6 +193,16 @@
 
   </section>
 
+  <!-- Sección de productos HYDRA -->
+  <section id="catalogo"></section>
+
+  <!-- JavaScript del catálogo -->
+  <script type="module">
+    import { iniciarCatalogo } from "./src/catalogo.js";
+
+    iniciarCatalogo("#catalogo");
+  </script>
+
   <footer class="footer">
     <div class="contenedor footer__content">
       <div class="footer__brand">
@@ -203,8 +217,8 @@
 
       <nav class="footer__nav" aria-label="Navegación del pie de página">
         <a href="index.html">Inicio</a>
-        <a href="#productos">Productos</a>
-        <a href="#">Nosotros</a>
+        <a href="#catalogo">Catalogo</a>
+        <a href="#categorias">Categorías</a>
       </nav>
 
       <div class="footer__contact">
